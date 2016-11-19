@@ -5,3 +5,5 @@
 <%= @post.content %>
 <p>author</p>
 <%= @post.author %>
+<p> destroy</p>
+<%= link_to 'destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
