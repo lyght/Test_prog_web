@@ -2,6 +2,7 @@
 <p>Find me in app/views/posts/new.html.erb</p>
 <% provide(:title, 'Sign up') %>
 
+<%= render 'error_messages' %>
 
     <%= form_for(@post) do |f| %>
 
