@@ -1,0 +1,35 @@
+[33mcommit bf65e714be9d4b9eeeee3447a9d10da8cb65b054[m
+Author: Gallien <w.gallien-93310@hotmail.fr>
+Date:   Sat Nov 19 19:24:06 2016 -0800
+
+    Amelioration model posts (presense :true) + affiochage erreur pour la page new
+
+[33mcommit 3236055ffd2fdaf3a71086351accf2d63f53ccf4[m
+Author: Gallien <w.gallien-93310@hotmail.fr>
+Date:   Fri Nov 18 18:06:00 2016 -0800
+
+    Simple Destroy
+
+[33mcommit aa76699bd153dc5c1940386ef87f996287a02818[m
+Author: Gallien <w.gallien-93310@hotmail.fr>
+Date:   Thu Nov 17 18:00:29 2016 -0800
+
+    Simple edit
+
+[33mcommit 714fe77d992763634e7c05151f734f42b90488b8[m
+Author: Gallien <w.gallien-93310@hotmail.fr>
+Date:   Wed Nov 16 15:19:46 2016 -0800
+
+    Ajout show all et amélioration de quelques views
+
+[33mcommit 5b6822c9289e55f9fe36ee955c202000ee4bf840[m
+Author: Gallien <w.gallien-93310@hotmail.fr>
+Date:   Wed Nov 16 12:32:31 2016 -0800
+
+    Posts_controller
+
+[33mcommit e6f96ff588e47a0733280acf6ecb8fc2b3d84f6b[m
+Author: Gallien <w.gallien-93310@hotmail.fr>
+Date:   Mon Nov 14 10:55:40 2016 -0800
+
+    Pages_controller
