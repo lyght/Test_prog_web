@@ -1,14 +1,25 @@
 <% provide(:title, 'Show All') %>
-<% @post.each do |post| %>
-<table>
-  <tr>
-    <td><%= post.title %></td>
-    <td><%= post.content %></td>
-    <td> <%= post.author%></td>
-    <%= link_to 'Edit ',edit_post_path(post) %>
 
-    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+<body>
+  <div class="container">
+  <h1>Articles</h1>
+  <p>
+  <% @post.each do |post| %>
+  <table class="table">
+      <tr>
+      <td><%= post.title %></td>
+      </tr>
+      <tr>
+      <td><%= post.content %></td>
+      </tr>
+      <tr>
+      <td> <%= post.author%></td>
+      </tr>
+      <%= link_to 'Edit ',edit_post_path(post) %>
 
-  </tr>
-</table>
-<% end %>
+      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </table>
+  <% end %>
+  </p>
+  </div>
+</body>
