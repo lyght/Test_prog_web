@@ -10,7 +10,11 @@ Rails.application.routes.draw do
   get 'posts/update'
 
   get 'posts/destroy'
+
   get 'posts/search'
+
+  get 'posts/showall'
+
 resources :posts
   get '/home', to: 'pages#home'
 

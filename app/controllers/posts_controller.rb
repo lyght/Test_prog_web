@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
-  def index
+  def showall
     @post = Post.all
   end
+
   def show
     @post = Post.find(params[:id])
   end
@@ -46,7 +47,7 @@ class PostsController < ApplicationController
   end
 
 def search
-  @post = Post.where("title = (?) OR content = (?)",params[:search],params[:search])
+  @post = Post.where("title = (?) OR content = (?) OR author = (?)",params[:search],params[:search], params[:search])
 
 
 end
