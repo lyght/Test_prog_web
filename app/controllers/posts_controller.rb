@@ -45,6 +45,11 @@ class PostsController < ApplicationController
     redirect_to home_path
   end
 
+def search
+  @post = Post.where("title = (?) OR content = (?)",params[:search],params[:search])
+
+
+end
   private
   def user_params
     params.require(:post).permit(:title, :content, :author)
