@@ -53,7 +53,7 @@ def search
 end
   private
   def user_params
-    params.require(:post).permit(:title, :content, :author)
+    params.require(:post).permit(:title, :content, :author, :image)
 
   end
 end

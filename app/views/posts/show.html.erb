@@ -5,6 +5,8 @@
 <%= @post.content %>
 <p>author</p>
 <%= @post.author %>
-<p> destroy</p>
+<p> Image</p>
+<%= image_tag @post.image.url %>
+
 <%= link_to 'Edit', edit_post_path %>
 <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
