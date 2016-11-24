@@ -4,7 +4,7 @@
 
 <%= render 'error_messages' %>
 
-    <%= form_for(@post) do |f| %>
+    <%= form_for @post, url: posts_path, html: { multipart: true } do |f| %>
 
       <%= f.label :title %>
       <%= f.text_field :title %>
@@ -14,6 +14,9 @@
       <br> <br>
       <%= f.label :author %>
       <%= f.text_field :author  %>
+      <br> <br>
+      <%= f.label :image %>
+      <%= f.file_field :image %>
       <br> <br>
       <%= f.submit "Post article" %>
     <% end %>

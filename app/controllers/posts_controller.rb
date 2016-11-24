@@ -19,9 +19,6 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(user_params)
     if @post.save
-      # Handle a successful save.
-      flash[:success] = "Welcome to the Sample App!"
-
       redirect_to @post
 
     else
@@ -33,6 +30,8 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     if @post.update_attributes(user_params)
+      redirect_to @post
+
     else
       render 'edit'
     end
@@ -53,7 +52,7 @@ def search
 end
   private
   def user_params
-    params.require(:post).permit(:title, :content, :author)
+    params.require(:post).permit(:title, :content, :author, :image)
 
   end
 end

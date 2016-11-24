@@ -13,6 +13,9 @@
       <tr>
       <td style="text-transform: capitalize"> <%= post.author%></td>
       </tr>
+      <tr>
+      <td> <%= image_tag post.image.url %></td>
+      </tr>
       <%= link_to 'Edit ',edit_post_path(post) %>
 
       <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>

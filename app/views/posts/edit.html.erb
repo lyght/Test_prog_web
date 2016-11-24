@@ -1,16 +1,20 @@
 <% provide(:title, 'Edit Post') %>
 <h1>Edit Your Post</h1>
 <p>Edit the content of the boxes and submit it</p>
-<%= form_for(@post) do |f| %>
+<%= form_for (@post), url: post_path, html: { multipart: true } do |f| %>
 
   <%= f.label :title %>
   <%= f.text_field :title %>
+  <br> <br>
 
   <%= f.label :content %>
   <%= f.text_area :content, cols: "60", rows: "5" %>
-
+  <br> <br>
   <%= f.label :author %>
   <%= f.text_field :author  %>
-
+  <br> <br>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <br> <br>
   <%= f.submit "Post article" %>
 <% end %>
