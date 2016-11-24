@@ -5,6 +5,7 @@
     <td><%= post.title %></td>
     <td><%= post.content %></td>
     <td> <%= post.author%></td>
+    <%= image_tag post.image.url %>
     <%= link_to 'Edit ',edit_post_path(post) %>
 
     <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>

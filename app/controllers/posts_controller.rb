@@ -19,7 +19,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(user_params)
     if @post.save
-      # Handle a successful save.
+      
       flash[:success] = "Welcome to the Sample App!"
 
       redirect_to @post
