@@ -1,25 +1,22 @@
 <% provide(:title, 'Show All') %>
 
 <body>
-  <div class="container">
   <h1>Articles</h1>
-  <p>
   <% @post.each do |post| %>
-  <table class="table">
+  <table class="table-bordered table-responsive text-centered">
       <tr>
-      <td><%= post.title %></td>
+      <td style="font-weight: bold; text-transform: uppercase"><%= post.title %></td>
       </tr>
       <tr>
-      <td><%= post.content %></td>
+      <td style="text-transform: capitalize"><%= post.content %></td>
       </tr>
       <tr>
-      <td> <%= post.author%></td>
+      <td style="text-transform: capitalize"> <%= post.author%></td>
       </tr>
       <%= link_to 'Edit ',edit_post_path(post) %>
 
       <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
   </table>
+  <br>
   <% end %>
-  </p>
-  </div>
 </body>
