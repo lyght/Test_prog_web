@@ -46,7 +46,7 @@ class PostsController < ApplicationController
   end
 
 def search
-  @post = Post.where("lower(title) LIKE ? OR lower(content) LIKE ? OR lower(author) LIKE ?","%#{params[:search].downcase}%","%#{params[:search].downcase}%", "%#{params[:search].downcase}%")
+  @post = Post.where("lower(title) LIKE ? OR lower(content) LIKE ? OR lower(author) LIKE ?","%#{params[:search.downcase]}%","%#{params[:search.downcase]}%", "%#{params[:search.downcase]}%")
 end
 
   private
