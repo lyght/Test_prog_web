@@ -1,2 +1,4 @@
 Post.create!([
+  {title: "Welcome !", content: "This is the first post of many.\r\nYou will be able to follow the development of ELEMENTS, the first game of the Arokma Studio.\r\n\r\nHope you enjoy !", author: "Rémi", image_file_name: "Elements_700p.png", image_content_type: "image/png", image_file_size: 1222647, image_updated_at: "2016-11-25 22:12:22"},
+  {title: "Fresh news comming soon", content: "We are about to show you the gameplay modules we have been working on for the versions of the game reserved for us, developers.\r\n\r\nWe are working on Unity 5 and now have many personal assets meant to be used in our future games.", author: "Rémi", image_file_name: "unity-logo-100571261-large.png", image_content_type: "image/png", image_file_size: 7244, image_updated_at: "2016-11-25 22:18:15"}
 ])
