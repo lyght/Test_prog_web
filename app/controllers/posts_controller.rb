@@ -46,10 +46,9 @@ class PostsController < ApplicationController
   end
 
 def search
-  @post = Post.where("title = (?) OR content = (?) OR author = (?)",params[:search],params[:search], params[:search])
-
-
+  @post = Post.where("lower(title) LIKE ? OR lower(content) LIKE ? OR lower(author) LIKE ?","%#{params[:search].downcase}%","%#{params[:search].downcase}%", "%#{params[:search].downcase}%")
 end
+
   private
   def user_params
     params.require(:post).permit(:title, :content, :author, :image)
