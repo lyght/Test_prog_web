@@ -8,10 +8,10 @@ Things you may want to cover:
 * Ruby v2.3.1p112     Rails v5.0.0.1
 
 * System dependencies
-$bundle install --without permission
+$bundle install
 
 * Database initialization
 $rake db:migrate
-$rake db:seed
 
-* Deployment instructions
+(to fill the database)
+$rake db:seed
